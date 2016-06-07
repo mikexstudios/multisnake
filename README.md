@@ -53,6 +53,6 @@ their platform][palantir].
    If you want to develop while running the script, mount the current 
    directory by:
 
-   `docker run -d -p 80:80 -p 843:843 -p 10123:10123 `pwd`:/usr/src/app mikexstudios/multisnake`
+   ```docker run -d -p 80:80 -p 843:843 -p 10123:10123 `pwd`:/usr/src/app mikexstudios/multisnake```
 
 3. Access the IP address of the docker container in a web browser to use!
