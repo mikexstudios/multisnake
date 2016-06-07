@@ -1,0 +1,135 @@
+
+/*-------------------------------------------------
+BODY
+-------------------------------------------------*/
+
+#content .introduction {
+	/*float: left;
+	width: 520px;*/
+	margin-top: 0px;
+	margin-bottom: 10px;
+    margin-right: 10px;
+}
+#content .introduction p {
+    margin-bottom: 0px;
+}
+
+#content .mailinglist {
+    padding-top: 5px;
+    text-align: center;
+    margin-bottom: 0px;
+}
+#content .mailinglist p {
+    font-size: 1em;
+    margin-bottom: 5px;
+}
+#content .mailinglist form .form_email {
+    width: 160px;
+    margin-bottom: 5px;
+}
+#content .mailinglist form .form_submit {
+    width: 165px;
+    border: 1px solid #ccc;
+    background-color:#fff;
+    font-weight: bold;
+}
+
+#content .announcement {
+    clear: both;
+    width: 80%;
+    margin-top: 0px;
+    /*border: 2px solid #360;*/
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 4px;
+    background-color: #FFB6C1;
+    padding: 3px;
+}
+#content .announcement p {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    text-align: center;
+}
+
+#content .game {
+	clear: both;
+	width: 440px;
+	/*background-color: #360;*/
+	text-align: center;
+	border: 5px solid #360;	
+    margin-top: 6px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#content .chat {
+    width: 90%;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+#content .chat p{
+	 text-align: center;
+     font-size: .8em;
+     margin-bottom: 0px;
+}
+
+#content .share p{
+	text-align: center;
+    margin-bottom: 0px;
+}
+
+#content .buttons {
+	margin-top: -5px;
+	text-align: center;
+} 
+
+#content .buttons .body {
+	margin-top: 10px;
+}
+
+#content .advertisement {
+	margin-top: 10px;
+	margin-left: -14px;
+	margin-bottom: 10px;
+}
+
+
+#content .instructions {
+	border: 4px solid #ccc;
+	margin-top: 0px;
+	background-color: #ddd;
+}
+
+#content .instructions h2 {
+	margin: 0;
+	border-bottom: 2px solid #ccc;
+	padding: 2px 10px 2px 10px;
+	font-weight: bold;
+	/*text-align: center;*/
+}
+
+#content .instructions table {
+	padding: 2px 12px 2px 12px;
+	margin-top: 10px;
+}
+
+#content .instructions table tr {
+
+}
+
+#content .instructions table tr .row_label {
+	padding: 0px 10px 0px 10px;
+	font-size: 1.3em;
+	width: 80px;
+	vertical-align: top;
+}
+
+#content .instructions table tr .row_body {
+	vertical-align: top;
+}
+
+#content .instructions table tr .row_body p {
+	margin-bottom: 3px; /* Corrects the paragraph creating a newline after itself */
+}

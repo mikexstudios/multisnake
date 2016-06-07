@@ -1,0 +1,73 @@
+{% extends 'base.html' %}
+
+{% block title %}Multisnake, The Massively Multiplayer Snake Flash Game - play
+with hundreds of other people online!{% endblock %}
+{% block css %}
+	@import url("css/home.css");
+{% endblock %}
+
+{% block content %}
+	<div class="introduction">
+		<p>
+             Ever wondered what would happen if you took the traditional snake
+             game and the made it <strong><em>massively</em>
+             multiplayer</strong>? Look no further! Play with friends and
+             strangers on the internet. 
+		</p>
+    </div>
+
+    {% include 'index-announce.html' %}
+
+	<div class="game">
+		<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" width="440" height="320" id="snakeswf">
+      <param name="movie" value="releases/snake.swf?dev=true&dev_server={{ request.host }}" />
+      <embed src="releases/snake.swf?dev=true&dev_server={{ request.host }}" width="440" height="320" name="snakeswf" type="application/x-shockwave-flash"
+             pluginspage="http://www.macromedia.com/go/getflashplayer" />
+    </object>
+	</div>
+	
+	<div class="share">
+		<p><a href="share">Want to share this game on your website?</a></p>
+    </div>
+
+    {% include 'ads.html' %}
+
+	<div class="instructions">
+		<h2>Instructions</h2>
+		<a name="instructions"></a> <!-- close for safari -->
+		<table>
+			<tr>
+				<td class="row_label"><strong>Goal:</strong></td>
+				<td class="row_body"><p>
+					Your task is to <strong>obtain the highest score</strong> by eating food, defeating 
+					opponent snakes, and staying alive as long as possible. The fittest
+					snake wins!
+			</p></td>
+			</tr>
+			<tr>
+				<td class="row_label"><strong>Controls:</strong></td>
+				<td class="row_body"><p>
+					The <strong>arrow keys</strong> control the movement of the snake.
+				</p><br /></td>
+			</tr>
+			<tr>
+				<td class="row_label"><strong>Scoring:</strong></td>
+				<td class="row_body"><p>
+					Each <strong>food piece</strong> you eat and each <strong>snake that 
+					you kill</strong> (defined as getting another snake to run into your 
+					body) gains you <strong>5 points</strong>. Conversely, each time you
+					<strong>die</strong> costs you <strong>5 points</strong>!
+				</p></td>
+			</tr>
+			<tr>
+				<td class="row_label"><strong>Tip:</strong></td>
+				<td class="row_body"><p>
+					<strong>One-unit snakes cannot kill other snakes!</strong> (Conversely, this means that
+					you can eat one-unit snakes as food.) Therefore, when you are a one-unit
+					snake, make sure you eat food as soon as possible so that you aren't
+					defenseless!
+				</p></td>
+			</tr>
+		</table>
+	</div>
+{% endblock %}

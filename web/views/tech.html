@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+
+{% block title %}Technology Behind The Game - Multisnake, The Massively Multiplayer Snake Flash Game{% endblock %}
+{% block css %}
+	@import url("css/tech.css");
+{% endblock %}
+
+{% block content %}
+  {% include 'ads.html' %}
+
+  <p>
+    This page describes the implementation of Multisnake.  If you're interested in learning more about our software or
+    deployment strategies, don't hesitate to contact us at
+    <a href="mailto:inquiries@multisnake.com">inquiries@multisnake.com</a>.
+  </p>
+
+  <p>
+    <b>Client</b> - The client program is written in ActionScript, compiled using the
+      <a href="http://www.mtasc.org">Motion-Twin ActionScript 2 Compiler (MTASC)</a>, and linked with graphics
+      using <a href="http://swfmill.org">swfmill</a>.  Communication with the server is done using TCP sockets
+      via the XMLSocket class (As far as we know, Flash does not currently support the use of UDP sockets).
+      
+    <!--  TODO more info about map drawing -->
+  </p>
+
+  <p>
+    <b>Server</b> - The server is implemented in Java.  It manages the game by storing representations of the
+      game board and player instances and updating each player synchronously.  Positions of food, snakes, and
+      walls are reported to the client in an efficient way in order to minimize the jitter/lag caused by network I/O.
+      Food and obstacle positions are grouped in "windows" and reported to a given client only when the client
+      is in the visible range of a window and the window has been changed since it was last reported to the client.
+      Since snake positions are constantly changing, we report differences at every time-step.
+      
+  </p>
+
+  <p>
+    <b>Server manager</b> - Since individual servers can only handle a finite number of players, it is necessary to
+      distribute players among multiple server instances.  In order to accomplish this sort of load-balancing, we
+      use a set of PHP scripts that return a list of optimal servers to the client based on information that
+      is periodically posted by the servers.
+  </p>
+{% endblock %}

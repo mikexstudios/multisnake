@@ -1,0 +1,70 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+	"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+    <title>{% block title %}Multisnake, The Massively Multiplayer Snake Flash
+        Game - play with hundreds of other people online!{% endblock %}</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+	<style type="text/css" media="screen">
+	/* <![CDATA[ */
+	@import url("css/default.css");
+	@import url("css/common.css");
+	{% block css %}
+	@import url("css/yourcsshere.css");
+	{% endblock %}
+	/* ]]> */
+	</style>
+	
+	<link rel="shortcut icon" href="favicon.ico" />
+  <link rel="icon" href="animated_favicon1.gif" type="image/gif" />
+</head>
+
+<body>
+<div id="wrap">
+
+<div id="header">
+	<h1><a href="http://www.multisnake.com">Massively Multiplayer Snake Flash Game</a></h1>
+	<!--<p></p> -->
+
+	<ul class="navigation">
+		<li><a href="index">Play Snake!</a></li>
+		<li><a href="share">Share/Embed</a></li>
+		<li><a href="http://multisnake.wordpress.com/">Blog</a></li>
+<!--		<li><a href="tech.php">Technical</a></li> -->
+		<li><a href="mailto:inquiries@multisnake.com">Contact Us</a></li>
+	</ul>
+</div>
+
+<div id="content">
+{% block content %}
+	<div class="somesectionname">
+		<p>
+			 Hello, gamers!
+		</p>
+	</div>
+{% endblock %}
+</div>
+
+<div id="footer">
+  <strong>a product of <a href="http://www.supplelabs.com">supple labs</a></strong>.
+</div>
+
+</div> <!-- End div for wrap -->
+
+<!-- Google Analytics --> 
+<script type="text/javascript"> 
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script> 
+<script type="text/javascript"> 
+try {
+var pageTracker = _gat._getTracker("UA-3364070-1");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+
+</body>
+
+</html>

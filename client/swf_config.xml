@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="iso-8859-1" ?>
+
+<movie width="440" height="320" framerate="25">
+  <background color="#ffffff" />
+  <frame>
+    <library>
+      <clip id="intro_logo" import="resources/msnake_logo3_w373.png" />
+      <clip id="product_supplelabs" import="resources/product_supplelabs.png" />
+      <clip id="wall_tile" import="resources/black_10px.png" />
+      <clip id="food_tile" import="resources/red_10px.png" />
+      <clip id="snake_tile" import="resources/green_10px.png" />
+      <clip id="enemy_tile" import="resources/blue_10px.png" />
+      <clip id="empty" />
+
+      <clip id="blue_tile" import="resources/blue_10px.png" />
+      <clip id="brown_tile" import="resources/brown_10px.png" />
+      <clip id="darkblue_tile" import="resources/darkblue_10px.png" />
+      <clip id="darkgray_tile" import="resources/darkgray_10px.png" />
+      <clip id="darkgreen_tile" import="resources/darkgreen_10px.png" />
+      <clip id="green_tile" import="resources/green_10px.png" />
+      <clip id="orange_tile" import="resources/orange_10px.png" />
+      <clip id="pink_tile" import="resources/pink_10px.png" />
+      <clip id="purple_tile" import="resources/purple_10px.png" />
+      <clip id="yellow_tile" import="resources/yellow_10px.png" />
+
+      <clip id="selection_background" import="resources/selection_background.png" />
+
+      <clip id="tile">
+        <frame><place id="empty" depth="1" /><stop /></frame> <!-- empty frame (frame 1) -->
+        <frame><place id="snake_tile" depth="2" /><stop /></frame>
+        <frame><place id="food_tile" depth="3"/><stop /></frame>
+        <frame><place id="wall_tile" depth="4"/><stop /></frame>
+        <frame><place id="enemy_tile" depth="5"/><stop /></frame>
+
+        <frame><place id="blue_tile" depth="6" /><stop /></frame>
+        <frame><place id="brown_tile" depth="7" /><stop /></frame>
+        <frame><place id="darkblue_tile" depth="8" /><stop /></frame>
+        <frame><place id="darkgray_tile" depth="9" /><stop /></frame>
+        <frame><place id="darkgreen_tile" depth="10" /><stop /></frame>
+        <frame><place id="green_tile" depth="11" /><stop /></frame>
+        <frame><place id="orange_tile" depth="12" /><stop /></frame>
+        <frame><place id="pink_tile" depth="13" /><stop /></frame>
+        <frame><place id="purple_tile" depth="14" /><stop /></frame>
+        <frame><place id="yellow_tile" depth="15" /><stop /></frame>
+
+        <frame><place id="selection_background" depth="16" /><stop /></frame>
+      </clip>
+    </library>
+    <stop />
+  </frame>
+</movie>

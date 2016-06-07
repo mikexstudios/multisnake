@@ -1,0 +1,32 @@
+application: multisnaker
+version: 1
+runtime: python
+api_version: 1
+
+handlers:
+- url: /favicon.ico
+  static_files: views/favicon.ico
+  upload: views/favicon.ico
+  
+- url: /animated_favicon1.gif
+  static_files: views/animated_favicon1.gif
+  upload: views/animated_favicon1.gif
+
+- url: /crossdomain.xml
+  static_files: views/crossdomain.xml
+  upload: views/crossdomain.xml
+  
+- url: /css
+  static_dir: views/css
+
+- url: /images
+  static_dir: views/images
+
+- url: /js
+  static_dir: views/js
+
+- url: /releases
+  static_dir: views/releases
+  
+- url: .*
+  script: main.py

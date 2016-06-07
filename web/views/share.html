@@ -1,0 +1,65 @@
+{% extends 'base.html' %}
+
+{% block title %}Embed and Share on your website - Multisnake, The Massively Multiplayer Snake Flash Game{% endblock %}
+{% block css %}
+	@import url("css/share.css");
+{% endblock %}
+
+{% block content %}
+	<div class="introduction">
+		<h2><span class="highlight">Embed and share this game on your website!<span></h2>
+		<p>
+			Want to add or embed <a href="http://www.multisnake.com">Multisnake</a> on 
+			your website or blog? <span class="highlight">Just copy and paste the code
+			below</span>.
+		</p>
+	</div>
+		
+	<div class="embed">
+		<form>
+<textarea rows="8"
+					cols="70"
+          readonly
+          onclick="javascript:select();">
+<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" width="400" height="300" id="snakeswf">
+  <param name="movie" value="http://games.mochiads.com/c/g/multiplayer-snake/snake.swf" />
+  <embed src="http://games.mochiads.com/c/g/multiplayer-snake/snake.swf" width="400" height="300" name="snakeswf" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" />
+</object>
+</textarea>
+		</form>
+	</div>
+	
+	<div class="introduction">
+		<p>
+			Alternatively, you can just add an <em><span class="highlight">image of the game</span> that links to the 
+			<a href="http://www.multisnake.com">Multisnake</a> website</em>:
+		</p>
+	</div>
+
+	<div class="embed">
+		<form>
+<textarea rows="8"
+					cols="70"
+          readonly
+          onclick="javascript:select();">
+<div style="text-align: center;">
+	<div style="width: 400px; margin: auto; border: 5px solid #360;">
+		<a href="http://www.multisnake.com"><img src="http://www.multisnake.com/images/msnake_screen_w400.gif" width="400px" height="300px" border="0" ></a>
+	</div>
+	<a href="http://www.multisnake.com">Play Multisnake, the massively multiplayer snake flash game!</a>
+</div>
+</textarea>
+		</form>
+	</div>
+
+<!--
+<div style="text-align: center;">
+	<div style="width: 400px; margin: auto; border: 5px solid #360;">
+		<a href="http://www.multisnake.com"><img src="images/msnake_screen_w400.gif" width="400px" height="300px" border="0" ></a>
+	</div>
+	<a href="http://www.multisnake.com">Play Multisnake, the massively multiplayer snake flash game!</a>
+</div>
+-->
+
+  {% include 'ads.html' %}
+{% endblock %}
