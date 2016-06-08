@@ -1,6 +1,10 @@
 multisnake
 ==========
 
+**This is no longer developed with last commits in 2008.**
+
+<img src="https://github.com/mikexstudios/multisnake/blob/master/screenshots/gameplay1.gif" alt="home">
+
 a massively multiplayer snake flash game
 
 Ever wondered what would happen if you took the traditional snake game and the
@@ -21,6 +25,51 @@ their platform][palantir].
 [mx]: https://github.com/mikexstudios
 [em]: https://github.com/eugeneiiim
 [palantir]: http://www.palantir.com/2009/07/the-multisnake-challenge/ 
+
+## Screenshots
+
+<table>
+<tr>
+  <td align="center">
+   <img src="https://github.com/mikexstudios/multisnake/blob/master/screenshots/home.png" width="100%">
+   <p><strong>Home</strong></p>
+  </td>
+  <td align="center">
+    <img src="https://github.com/mikexstudios/multisnake/blob/master/screenshots/instructions.png" width="100%">
+    <p><strong>Instructions</strong></p>
+  </td>
+</tr>
+<tr>
+  <td align="center">
+   <img src="https://github.com/mikexstudios/multisnake/blob/master/screenshots/connecting.png" width="100%">
+   <p><strong>Connecting</strong></p>
+  </td>
+  <td align="center">
+    <img src="https://github.com/mikexstudios/multisnake/blob/master/screenshots/play1.png" width="100%">
+    <p><strong>Gameplay 1</strong></p>
+  </td>
+</tr>
+<tr>
+  <td align="center">
+   <img src="https://github.com/mikexstudios/multisnake/blob/master/screenshots/play2.png" width="100%">
+   <p><strong>Gameplay 2</strong></p>
+  </td>
+  <td align="center">
+    <img src="https://github.com/mikexstudios/multisnake/blob/master/screenshots/play3.png" width="100%">
+    <p><strong>Gameplay 3</strong></p>
+  </td>
+</tr>
+<tr>
+  <td align="center">
+   <img src="https://github.com/mikexstudios/multisnake/blob/master/screenshots/score.png" width="100%">
+   <p><strong>Score Screen</strong></p>
+  </td>
+  <td align="center">
+    <img src="https://github.com/mikexstudios/multisnake/blob/master/screenshots/shareshot.png" width="100%">
+    <p><strong>Sharing</strong></p>
+  </td>
+</tr>
+</table>
 
 ## Play Instructions
 
